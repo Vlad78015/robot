@@ -1,0 +1,246 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    border: 0; outline: 0;
+    list-style: none; 
+    box-sizing: border-box; 
+    text-decoration: none;
+}
+
+.robot {
+    border: 1px solid #000;
+    width: 750px;
+    height: 750px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s;
+    background: url(https://img.freepik.com/free-vector/abstract-classic-blue-screensaver_23-2148421853.jpg?w=1800&t=st=1683203653~exp=1683204253~hmac=028d5df3966f1b798088b6baf1a1e88fa684857da5da1bfc45b1ef1804f1c974);
+    border-radius: 20px;
+}
+.robot:hover{
+    cursor: pointer;
+}
+.robot:hover .golova{
+    transform: translateY(20px) scale(1.1);
+}
+.golova {
+    margin-top: 40px;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px 10px 50px 50px;
+    background-color: rgb(0, 157, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s;
+    position: relative;
+}
+.golova::after{
+    position: absolute;
+    content: '';
+    width: 150px;
+    height: 10px;
+    background-color: #9b1494;
+    top: -5px;
+    border-radius: 10px 10px 0 0;
+}
+.golova:hover{
+    background-color: rgb(229, 205, 21);
+}
+.ochi {
+    border: 2px solid #ff000074;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 2px;
+    border-radius: 30px;
+}
+.glaz {
+    position: relative;
+    width: 30px;
+    height: 40px;
+    background-color: coral;
+    border-radius: 50px 50px 0 0;
+    margin: 0 10px;
+    transition: 0.5s;
+}
+.glaz::before{
+    top: 9px;
+    left: 3px;
+    position: absolute;
+    content: '';
+    background-color: #ffffff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.glaz::after{
+    top: 11px;
+    left: 5px;
+    position: absolute;
+    content: '';
+    background-color: #0e6f02;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+.glaz:hover{
+    transform: scale(1.2) translateY(-15px);
+    background-color: rgb(255, 38, 0);
+}
+.nis {
+    height: 30px;
+    width: 10px;
+    background-color: burlywood;
+    transition: 0.5s;
+    border-radius: 0 0 10px 10px;
+}
+.nis:hover{
+    transform: scale(1.5);
+    background-color: rgb(255, 153, 0);
+}
+.rot {
+    width: 40px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: burlywood;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.rot:hover{
+    transform: skew(40deg);
+    background-color: rgb(249, 61, 99);
+}
+.rot:hover{
+    transform: rotate(25deg);
+}
+.tilo {
+    width: 250px;
+    height: 250px;
+    border-radius: 20px 20px 50px 50px;
+    background-color: rgb(167, 30, 235);
+    transition: 0.5s;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.tilo::before{
+    position: absolute;
+    content: '';
+    width: 200px;
+    height: 200px;
+    background-color: rgb(18, 203, 18);
+    border-radius: 10px 10px 40px 40px;
+    top: 25px;
+    left: 25px;
+}
+.robot:hover .tilo{
+    transform: scale(0.8);
+}
+.tilo:hover{
+    background-color: darkorange;
+}
+.left-ruka {
+    width: 50px;
+    height: 250px;
+    background-color: #0e6f02;
+    margin-left: 250px;
+    border-radius: 10px;
+    transition: 0.4s;
+    position: relative;
+}
+.left-ruka:hover{
+    background-color: coral;
+    transform: translate(20px) scale(1.1);
+}
+.left-ruka::after{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 50px;
+    background-color: aqua;
+    right: 15px;
+}
+.left-ruka::before{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 50px;
+    background-color: rgb(114, 20, 255);
+    left: 15px;
+    top: 190px;
+}
+.puzo {
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+    background-color: rgb(186, 160, 10);
+    transition: 0.4s;
+}
+.puzo:hover{
+    background-color: rgb(173, 96, 203);
+}
+.right-ruka {
+    width: 50px;
+    height: 250px;
+    background-color: brown;
+    margin-left: -50px;
+    margin-top: -290px;
+    border-radius: 10px;
+    transition: 0.4s;
+    position: relative;
+}
+.right-ruka:hover{
+    background-color: rgb(235, 88, 14);
+    transform: translate(-20px) scale(1.1);
+}
+.right-ruka::after{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 50px;
+    background-color: deepskyblue;
+    left: 15px;
+}
+.right-ruka::before{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 50px;
+    background-color: gold;
+    top: 190px;
+    right: 15px;
+}
+.nizhki {
+    display: flex;
+}
+.left-noga {
+    width: 50px;
+    height: 200px;
+    background-color: cornflowerblue;
+    transition: 0.4s;
+}
+.right-noga {
+    width: 50px;
+    height: 200px;
+    background-color: cornflowerblue;
+    transition: 0.4s;
+}
+.left-noga:hover{
+    transform: translate(-15px);
+}
+.right-noga:hover{
+    transform: translate(15px);
+}
+.boots{
+    width: 150px;
+    height: 50px;
+    background-color: #9a0404;
+    transition: 0.4s;
+}
+.boots:hover{
+    background-color: chartreuse;
+    transform: scale(1.2);
+}
